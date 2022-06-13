@@ -66,41 +66,57 @@ img {
 @-webkit-keyframes fromLeft {
   from {
     left: -100px;
+    -webkit-transform: skew(-7deg);
+            transform: skew(-7deg);
     opacity: 0;
   }
   to {
     left: 0;
     opacity: 1;
+    -webkit-transform: skew(7deg);
+            transform: skew(7deg);
   }
 }
 @keyframes fromLeft {
   from {
     left: -100px;
+    -webkit-transform: skew(-7deg);
+            transform: skew(-7deg);
     opacity: 0;
   }
   to {
     left: 0;
     opacity: 1;
+    -webkit-transform: skew(7deg);
+            transform: skew(7deg);
   }
 }
 @-webkit-keyframes fromRight {
   from {
     right: -100px;
     opacity: 0;
+    -webkit-transform: skew(5deg);
+            transform: skew(5deg);
   }
   to {
     right: 0;
     opacity: 1;
+    -webkit-transform: skew(-12deg);
+            transform: skew(-12deg);
   }
 }
 @keyframes fromRight {
   from {
     right: -100px;
     opacity: 0;
+    -webkit-transform: skew(5deg);
+            transform: skew(5deg);
   }
   to {
     right: 0;
     opacity: 1;
+    -webkit-transform: skew(-12deg);
+            transform: skew(-12deg);
   }
 }
 @-webkit-keyframes fromTop {
@@ -311,6 +327,7 @@ table tr td:not(.marked):hover {
 .name-container h2 .x,
 .name-container h2 .vs,
 .name-container h2 .y {
+  font-weight: 800;
   opacity: 0;
   position: relative;
   -webkit-animation-fill-mode: forwards;
@@ -319,6 +336,7 @@ table tr td:not(.marked):hover {
           animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .name-container h2 .x {
+  text-shadow: -2px 2px 4px #444;
   -webkit-animation: fromLeft 1s forwards;
           animation: fromLeft 1s forwards;
   -webkit-animation-timing-function: cubic-bezier(0.87, -1.04, 0.04, 2.42);
@@ -340,6 +358,7 @@ table tr td:not(.marked):hover {
           animation-timing-function: cubic-bezier(1, -0.07, 1, 1);
 }
 .name-container h2 .y {
+  text-shadow: 2px 2px 4px #444;
   -webkit-animation: fromRight 1s 0.7s forwards;
           animation: fromRight 1s 0.7s forwards;
   -webkit-animation-timing-function: cubic-bezier(0.87, -1.04, 0.04, 2.42);
@@ -351,7 +370,7 @@ table tr td:not(.marked):hover {
 }
 .name-container h2 .y:after {
   content: '0';
-  font-size: 20px;
+  font-size: 23px;
 }
 .name-container .name-block {
   width: 400px;
