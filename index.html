@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Tic-tac-toe</title>
+    <meta name="description" content="Крестики-нолики">
+  </head>
+  <body>
+    <header> </header>
+    <div class="game-container">
+      <div class="gamers-container">
+        <div class="gamers"> 
+          <h3>Ходит</h3>
+          <div class="gamer-name"> 	</div>
+        </div>
+      </div>
+      <div class="describe">Посмотреть правила</div>
+      <table>
+        <tr>
+          <td></td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="result visually-hidden">
+        <div class="winner">
+          <div class="winnerName"></div>
+        </div>
+        <div class="score">
+          <div class="players-list"></div>
+          <div class="players-score"></div>
+        </div>
+        <div class="replay">Ещё раз?</div>
+      </div>
+    </div>
+    <div class="name-container">
+      <div class="name-wrapper">
+        <h2> 
+          <div class="x">xX</div>
+          <div class="vs">VS </div>
+          <div class="y">0</div>
+        </h2>
+        <div class="name-block">
+          <h3>Укажите имена</h3>
+          <div class="name-input">
+            <label>Игрок 1<br>
+              <input class="player-name" tabindex="1" id="player1">
+              <p class="message"></p>
+            </label>
+          </div>
+          <div class="name-input">
+            <label>Игрок 2<br>
+              <input class="player-name" tabindex="2" id="player2">
+              <p class="message"></p>
+            </label>
+          </div>
+          <div class="approve" tabindex="3">Подтвердить</div>
+        </div>
+      </div>
+    </div>
+    <footer> </footer>
+    <div class="svg-container"></div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
