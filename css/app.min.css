@@ -224,11 +224,15 @@ table tr td {
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 2px #000;
-  -webkit-box-shadow: 2px 2px 4px #333;
-          box-shadow: 2px 2px 4px #333;
-  background-color: hsl(192, 94%, 44%);
   border-radius: 10%;
   cursor: pointer;
+  background-color: hsl(192, 94%, 44%);
+  -webkit-box-shadow: 2px 2px 4px #333, inset 0px 0px 0px #444, inset 0px 0px 0px hsl(192, 94%, 44%);
+          box-shadow: 2px 2px 4px #333, inset 0px 0px 0px #444, inset 0px 0px 0px hsl(192, 94%, 44%);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 table tr td:not(.marked):hover {
   background-color: hsl(192, 94%, 54%);
