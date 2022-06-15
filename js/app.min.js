@@ -52,7 +52,10 @@ function winCheck() {
 			values[n[0]] == values[n[2]] &&
 			values[n[0]] != '' ) {
 			for( let i of n){
-				tdList[i].classList.add('win');
+				let ms = n.indexOf(i) * 200;
+				setTimeout( ()=> {
+					tdList[i].classList.add('win');					
+				}, ms)
 			}
 			return true
 		}
